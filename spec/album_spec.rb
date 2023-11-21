@@ -18,10 +18,4 @@ describe MusicAlbum do
     it 'should be on Spotify' do
       expect(@album.on_spotify?).to be(true)
     end
-
-    # apparently tests for private methods is a bad idea?
-    
-    # it 'shouldnt be able to be archived' do
-    #   expect(@album.can_be_archived?).to be_falsy
-    # end
 end  
