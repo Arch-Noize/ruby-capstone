@@ -1,4 +1,7 @@
-class Book
+require_relative './item'
+require 'json'
+
+class Book < Item
     attr_accessor :publisher, :cover_state
   
     def initialize(publisher, cover_state)
@@ -7,12 +10,17 @@ class Book
     end
   
     def can_be_archived?
-        parent_can_be_archived = super # Call the parent class method
-
-        if parent_can_be_archived || @cover_state == "bad"
-          return true
+        if @cover_state == "bad"
+            return true
         else
-          return false
+            return false
         end
+    end
+
+    def to_json
+        {
+            'publisher' => @publisher,
+            'cover_state' => @cover_state
+        }.to_json
     end
 end
