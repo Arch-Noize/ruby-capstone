@@ -1,4 +1,5 @@
 require 'json'
+
 class Item
   attr_accessor :id, :author, :source, :label, :publish_date, :archived
 
@@ -10,11 +11,6 @@ class Item
     @label = nil
     @publish_date = publish_date
     @archived = false
-  end
-
-  def can_be_archived?
-    # Time.now.year is an internal ruby class that prints out the current year
-    (Time.now.year - @publish_date.year) > 10
   end
 
   def move_to_archive
@@ -31,5 +27,12 @@ class Item
       'publish_date' => @publish_date,
       'archived' => @archived
     }.to_json
+  end
+
+  private
+
+  def can_be_archived?
+    # Time.now.year is an internal ruby class that prints out the current year
+    (Time.now.year - @publish_date.year) > 10
   end
 end

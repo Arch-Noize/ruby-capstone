@@ -1,3 +1,4 @@
+require 'rspec'
 require './classes/book.rb'
 require 'json'
 

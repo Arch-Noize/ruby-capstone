@@ -1,5 +1,6 @@
+require 'rspec'
 require './classes/label'
-require './item'
+require './classes/item'
 require 'json'
 
 RSpec.describe Label do
