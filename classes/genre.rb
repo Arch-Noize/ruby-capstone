@@ -14,4 +14,12 @@ class Genre
     @items << item
     item.genre = self
   end
+
+  def to_json(*_args)
+    {
+      'id' => @id,
+      'name' => @name,
+      'items' => @items.map(&:to_json)
+    }.to_json
+  end
 end
