@@ -28,7 +28,7 @@ class Item
       'archived' => @archived
     }.to_json
   end
-  
+
   def archive_if_possible
     move_to_archive if can_be_archived?
   end
@@ -39,5 +39,4 @@ class Item
     # Time.now.year is an internal ruby class that prints out the current year
     (Time.now.year - @publish_date.year) > 10
   end
-
 end
