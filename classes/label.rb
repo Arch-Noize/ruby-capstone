@@ -21,7 +21,7 @@ class Label
 
   def archive_items
     @items.each do |item|
-      item.move_to_archive if item.respond_to?(:move_to_archive) && item.can_be_archived?
+      item.archive_if_possible if item.respond_to?(:archive_if_possible)
     end
   end
 
