@@ -36,13 +36,10 @@ RSpec.describe Label do
 
       label.items = [item1, item2]
 
-      allow(item1).to receive(:move_to_archive)
-      allow(item2).to receive(:move_to_archive)
-
       label.archive_items
 
-      expect(item1).to have_received(:move_to_archive)
-      expect(item2).not_to have_received(:move_to_archive)
+      expect(item1.archived).to be true
+      expect(item2.archived).to be false
     end
   end
 
