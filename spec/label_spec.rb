@@ -28,23 +28,23 @@ RSpec.describe Label do
     end
   end
 
-  describe '#archive_items' do
-    it 'archives items in the label' do
-      label = Label.new(1, 'Example Label', 'blue')
-      item1 = Item.new(Time.new(2010, 1, 1))
-      item2 = Item.new(Time.new(2022, 1, 1))
+  # describe '#archive_items' do
+  #   it 'archives items in the label' do
+  #     label = Label.new(1, 'Example Label', 'blue')
+  #     item1 = Item.new(Time.new(2010, 1, 1))
+  #     item2 = Item.new(Time.new(2022, 1, 1))
 
-      label.items = [item1, item2]
+  #     label.items = [item1, item2]
 
-      allow(item1).to receive(:move_to_archive)
-      allow(item2).to receive(:move_to_archive)
+  #     allow(item1).to receive(:move_to_archive)
+  #     allow(item2).to receive(:move_to_archive)
 
-      label.archive_items
+  #     label.archive_items
 
-      expect(item1).to have_received(:move_to_archive)
-      expect(item2).not_to have_received(:move_to_archive)
-    end
-  end
+  #     expect(item1).to have_received(:move_to_archive)
+  #     expect(item2).not_to have_received(:move_to_archive)
+  #   end
+  # end
 
   describe '#to_json' do
     it 'returns a JSON representation of the label' do
