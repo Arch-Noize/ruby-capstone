@@ -9,7 +9,7 @@ class MusicAlbum < Item
   end
 
   def on_spotify?
-    @on_spotify == 'y' ? true : false
+    @on_spotify == 'y'
   end
 
   private
