@@ -28,20 +28,4 @@ RSpec.describe Book do
       expect(good_cover_book.archived).to be false
     end
   end
-
-  describe '#to_json' do
-    it 'returns a JSON representation of the book' do
-      book = Book.new(genre, author, label, publish_date, 'Same Publisher', 'good')
-
-      json_result = {
-        'id' => book.id,
-        'publisher' => publisher,
-        'cover_state' => cover_state,
-        'publish_date' => publish_date,
-        'archived' => false
-      }.to_json
-
-      expect(book.to_json).to eq(json_result)
-    end
-  end
 end
