@@ -1,14 +1,11 @@
-require 'json'
-
 class Item
-  attr_accessor :id, :genre, :author, :source, :label, :publish_date, :archived
+  attr_accessor :id, :genre, :author, :label, :publish_date, :archived
 
-  def initialize(publish_date)
+  def initialize(genre, author, label, publish_date)
     @id = Random.rand(1..1000)
-    @genre = nil
-    @author = nil
-    @source = nil
-    @label = nil
+    @genre = genre || {}
+    @author = author || {}
+    @label = label || {}
     @publish_date = publish_date
     @archived = false
   end

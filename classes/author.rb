@@ -20,8 +20,7 @@ class Author
     {
       'id' => @id,
       'first_name' => @first_name,
-      'last_name' => @last_name,
-      'items' => @items.map(&:to_json)
+      'last_name' => @last_name
     }.to_json
   end
 end
