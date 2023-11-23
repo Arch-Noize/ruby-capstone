@@ -1,0 +1,79 @@
+[
+  {
+    "id": 153,
+    "genre": {
+      "id": 894,
+      "name": "asdfzxcv"
+    },
+    "author": {
+      "id": 245,
+      "first_name": "vbn",
+      "last_name": "cvbn"
+    },
+    "label": {
+      "id": 376,
+      "title": "zxcvz",
+      "color": "cxvb"
+    },
+    "publish_date": "2002-11-11",
+    "on_spotify": "true"
+  },
+  {
+    "id": 108,
+    "genre": {
+      "id": 176,
+      "name": "2391312"
+    },
+    "author": {
+      "id": 750,
+      "first_name": "sfnjkdsfmslf",
+      "last_name": "sdklfdsklfsd"
+    },
+    "label": {
+      "id": 242,
+      "title": "321312893u12",
+      "color": "fdskfsd;fs"
+    },
+    "publish_date": "1920-12-12",
+    "on_spotify": true
+  },
+  {
+    "id": 479,
+    "genre": {
+      "id": 702,
+      "name": "werqwe"
+    },
+    "author": {
+      "id": 127,
+      "first_name": "eyu",
+      "last_name": "ghj"
+    },
+    "label": {
+      "id": 105,
+      "title": "qertw",
+      "color": "rwty"
+    },
+    "publish_date": "2011-11-11",
+    "on_spotify": true
+  },
+  {
+    "id": 50,
+    "genre": {
+      "id": 657,
+      "name": "fvxb"
+    },
+    "author": {
+      "id": 301,
+      "first_name": "mbn",
+      "last_name": "hgj"
+    },
+    "label": {
+      "id": 119,
+      "title": "xxcv",
+      "color": "nbvn"
+    },
+    "publish_date": "2013-01-01",
+    "on_spotify": true
+  },
+  {"id":208,"genre":{"id":274,"name":"dfgx"},"author":{"id":5,"first_name":"dfgsd","last_name":"sdfgvc"},"label":{"id":53,"title":"xcbjnd","color":"dfgn"},"publish_date":"2010-02-02","on_spotify":false}
+]

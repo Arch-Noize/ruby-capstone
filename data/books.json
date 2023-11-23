@@ -1,0 +1,12 @@
+[
+  {
+    "id": 775,
+    "genre": { "id": 773, "name": "Horror" },
+    "author": { "id": 594, "first_name": "lil", "last_name": "snow" },
+    "label": { "id": 486, "title": "platinum", "color": "silver" },
+    "publisher": "Salt",
+    "cover_state": "bad",
+    "publish_date": "2001-01-01",
+    "archived": true
+  }
+]
