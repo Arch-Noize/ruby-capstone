@@ -122,8 +122,7 @@ class App
 
   # save to JSON
   def save_json_data(file_path, data)
-    json_save = JSONifier.new
-    json_save.save_data(file_path, data)
+    JSONifier.new.save_data(file_path, data)
   end
 
   # Album creation
@@ -132,11 +131,7 @@ class App
     print 'On Spotify [Y/N]?'
     input = gets.chomp.to_s.upcase
 
-    if input == 'Y'
-      on_spotify = true
-    else
-      on_spotify = false
-    end
+    on_spotify = input == 'Y'
 
     album = MusicAlbum.new(
       data[:genre],
