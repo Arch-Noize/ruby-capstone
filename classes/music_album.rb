@@ -9,7 +9,7 @@ class MusicAlbum < Item
   end
 
   def on_spotify?
-    @on_spotify == 'y'
+    @on_spotify == true
   end
 
   def to_json(*_args)

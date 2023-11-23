@@ -130,7 +130,13 @@ class App
   def create_album
     data = gather_data
     print 'On Spotify [Y/N]?'
-    on_spotify = gets.chomp.to_s.upcase
+    input = gets.chomp.to_s.upcase
+
+    if input == 'Y'
+      on_spotify = true
+    else
+      on_spotify = false
+    end
 
     album = MusicAlbum.new(
       data[:genre],
