@@ -63,7 +63,7 @@ The main features of our application can be seen by our console app. Where you c
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Currently, this is not an available feature
+Currently, this is not an available feature. However, you can see a video of us demonstrating how the app works, and how it was made [here!](https://drive.google.com/file/d/1JqKVnPhM_qjesTMW52rL6mEBpxWiE2ZU/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
