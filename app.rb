@@ -104,7 +104,7 @@ class App
     @labels << new_label
     save_json_data('./data/labels.json', @labels)
 
-    #Author
+    # Author
     puts 'Author first name?'
     author_first = gets.chomp.to_s
     puts 'Author last name?'
@@ -113,7 +113,7 @@ class App
     @authors << new_author
     save_json_data('./data/authors.json', @authors)
 
-    #Publish_date
+    # Publish_date
     puts 'Publish Date (YYYY-MM-DD)?'
     publish_date = Date.parse(gets.chomp)
 

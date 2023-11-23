@@ -8,7 +8,7 @@ require 'json'
 
 RSpec.describe Book do
   let(:genre) { Genre.new('Rock') }
-  let(:author) { Author.new('John','Doe') }
+  let(:author) { Author.new('John', 'Doe') }
   let(:label) { Label.new('Strong', 'Brown') }
   let(:publish_date) { Date.new(2019, 1, 1) }
   let(:sample_publisher) { 'Sample publisher' }

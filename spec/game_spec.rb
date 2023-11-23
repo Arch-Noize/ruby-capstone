@@ -7,7 +7,7 @@ require 'date'
 
 describe Game do
   let(:genre) { Genre.new('Rock') }
-  let(:author) { Author.new('John','Doe') }
+  let(:author) { Author.new('John', 'Doe') }
   let(:label) { Label.new('Strong', 'Brown') }
   let(:publish_date) { Date.new(2019, 1, 1) }
   let(:game) { Game.new(genre, author, label, publish_date, 'y', '2022-01-01') }

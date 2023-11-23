@@ -8,7 +8,7 @@ require './classes/item'
 describe MusicAlbum do
   before :each do
     @genre = Genre.new('Rock')
-    @author = Author.new('John','Doe')
+    @author = Author.new('John', 'Doe')
     @label = Label.new('Strong', 'Brown')
     @album = MusicAlbum.new(@genre, @author, @label, '2002-1-1', 'y')
   end
