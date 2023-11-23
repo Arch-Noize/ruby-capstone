@@ -10,7 +10,7 @@ describe MusicAlbum do
     @genre = Genre.new('Rock')
     @author = Author.new('John', 'Doe')
     @label = Label.new('Strong', 'Brown')
-    @album = MusicAlbum.new(@genre, @author, @label, '2002-1-1', 'y')
+    @album = MusicAlbum.new(@genre, @author, @label, '2002-1-1', true)
   end
 
   it 'should be instance of MusicAlbum' do

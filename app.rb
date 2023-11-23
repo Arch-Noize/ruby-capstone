@@ -130,7 +130,6 @@ class App
     data = gather_data
     print 'On Spotify [Y/N]?'
     input = gets.chomp.to_s.upcase
-
     on_spotify = input == 'Y'
 
     album = MusicAlbum.new(
