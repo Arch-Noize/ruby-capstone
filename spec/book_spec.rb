@@ -1,11 +1,19 @@
 require 'rspec'
 require './classes/book'
+require './classes/genre'
+require './classes/author'
+require './classes/label'
+require 'date'
 require 'json'
 
 RSpec.describe Book do
+  let(:genre) { Genre.new('Rock') }
+  let(:author) { Author.new('John','Doe') }
+  let(:label) { Label.new('Strong', 'Brown') }
+  let(:publish_date) { Date.new(2019, 1, 1) }
   let(:sample_publisher) { 'Sample publisher' }
-  let(:good_cover_book) { Book.new(sample_publisher, 'good', Date.new(2020, 1, 1)) }
-  let(:bad_cover_book) { Book.new(sample_publisher, 'bad', Date.new(2020, 1, 1)) }
+  let(:good_cover_book) { Book.new(genre, author, label, publish_date, sample_publisher, 'good') }
+  let(:bad_cover_book) { Book.new(genre, author, label, publish_date, sample_publisher, 'bad') }
 
   describe '#move_to_archive' do
     it 'sets archived to true if cover can be archived' do
@@ -23,10 +31,7 @@ RSpec.describe Book do
 
   describe '#to_json' do
     it 'returns a JSON representation of the book' do
-      publisher = 'Example Publisher'
-      cover_state = 'good'
-      publish_date = Date.new(2020, 1, 1)
-      book = Book.new(publisher, cover_state, publish_date)
+      book = Book.new(genre, author, label, publish_date, 'Same Publisher', 'good')
 
       json_result = {
         'id' => book.id,
