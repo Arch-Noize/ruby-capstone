@@ -1,10 +1,16 @@
 require 'rspec'
 require './classes/game'
+require './classes/genre'
+require './classes/author'
+require './classes/label'
 require 'date'
 
 describe Game do
+  let(:genre) { Genre.new('Rock') }
+  let(:author) { Author.new('John','Doe') }
+  let(:label) { Label.new('Strong', 'Brown') }
   let(:publish_date) { Date.new(2019, 1, 1) }
-  let(:game) { Game.new(true, '2022-01-01', publish_date) }
+  let(:game) { Game.new(genre, author, label, publish_date, 'y', '2022-01-01') }
 
   describe '#move_to_archive' do
     context 'when can be archived' do

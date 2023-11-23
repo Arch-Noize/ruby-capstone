@@ -26,4 +26,18 @@ RSpec.describe Label do
       expect(label.list_items).to eq(['Book 1', 'Book 2'])
     end
   end
+
+  describe '#to_json' do
+    it 'returns a JSON representation of the label' do
+      label = Label.new('Example Label', 'blue')
+
+      expected_json = {
+        'id' => label.id,
+        'title' => label.title,
+        'color' => label.color
+      }.to_json
+
+      expect(book.to_json).to eq(json_result)
+    end
+  end
 end
