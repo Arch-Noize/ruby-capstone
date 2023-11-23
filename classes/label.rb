@@ -3,8 +3,8 @@ require 'json'
 class Label
   attr_accessor :id, :title, :color, :items
 
-  def initialize(id, title, color)
-    @id = id
+  def initialize(title, color)
+    @id = Random.rand(1..1000)
     @title = title
     @color = color
     @items = []
@@ -29,8 +29,7 @@ class Label
     {
       'id' => @id,
       'title' => @title,
-      'color' => @color,
-      'items' => @items.map(&:to_json)
+      'color' => @color
     }.to_json
   end
 end

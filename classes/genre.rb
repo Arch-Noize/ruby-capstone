@@ -18,8 +18,7 @@ class Genre
   def to_json(*_args)
     {
       'id' => @id,
-      'name' => @name,
-      'items' => @items.map(&:to_json)
+      'name' => @name
     }.to_json
   end
 end

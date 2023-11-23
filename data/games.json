@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": 884,
+    "genre": { "id": 73, "name": "Shooting" },
+    "author": { "id": 535, "first_name": "qwer", "last_name": "qrt" },
+    "label": { "id": 841, "title": "badjuju", "color": "green" },
+    "multiplayer": "Y",
+    "last_played_at": "2023-1-1",
+    "publish_date": "2001-02-02",
+    "archived": false
+  }
+]

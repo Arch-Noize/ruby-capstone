@@ -5,20 +5,19 @@ require 'json'
 class Game < Item
   attr_accessor :multiplayer, :last_played_at
 
-  def initialize(multiplayer, last_played_at, publish_date)
-    super(publish_date)
+  def initialize(genre, author, label, publish_date, multiplayer, last_played_at)
+    super(genre, author, label, publish_date)
     @multiplayer = multiplayer
     @last_played_at = last_played_at
-    @archived = false
-  end
-
-  def move_to_archive
-    @archived = true if can_be_archived?
-    nil
+    @archived = can_be_archived?
   end
 
   def to_json(*_args)
     {
+      'id' => @id,
+      'genre' => @genre,
+      'author' => @author,
+      'label' => @label,
       'multiplayer' => @multiplayer,
       'last_played_at' => @last_played_at,
       'publish_date' => @publish_date,

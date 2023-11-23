@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": 153,
+    "genre": { "id": 894, "name": "asdfzxcv" },
+    "author": { "id": 245, "first_name": "vbn", "last_name": "cvbn" },
+    "label": { "id": 376, "title": "zxcvz", "color": "cxvb" },
+    "publish_date": "2002-11-11",
+    "on_spotify": "Y"
+  }
+]

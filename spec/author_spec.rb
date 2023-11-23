@@ -4,8 +4,8 @@ require './classes/item'
 
 describe Author do
   let(:author) { Author.new('Santiago', 'Ruido') }
-  let(:item1) { Item.new('2020, 1, 1') }
-  let(:item2) { Item.new('2021, 1, 1') }
+  let(:item1) { Item.new('Rock', 'John', 'Strong', '2020, 1, 1') }
+  let(:item2) { Item.new('Jazz', 'Miles', 'Soft', '2021, 1, 1') }
 
   describe 'Testing attributes' do
     it 'should have Santiago as first name' do

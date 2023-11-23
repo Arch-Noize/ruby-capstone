@@ -12,7 +12,7 @@ class JSONifier
     end
   end
 
-  def save_data(data, filename)
+  def save_data(filename, data)
     File.write(filename, JSON.pretty_generate(data))
   end
 end

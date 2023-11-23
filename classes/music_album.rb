@@ -3,8 +3,8 @@ require_relative 'item'
 class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(published_date, on_spotify)
-    super(published_date)
+  def initialize(genre, author, label, publish_date, on_spotify)
+    super(genre, author, label, publish_date)
     @on_spotify = on_spotify
   end
 
@@ -18,8 +18,8 @@ class MusicAlbum < Item
       'genre' => @genre,
       'author' => @author,
       'label' => @label,
-      'on_spotify' => @on_spotify,
-      'publish_date' => @publish_date
+      'publish_date' => @publish_date,
+      'on_spotify' => @on_spotify
     }.to_json
   end
 
