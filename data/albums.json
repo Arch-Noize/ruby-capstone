@@ -1,3 +1,22 @@
 [
-  {"id":755,"genre":"{}","author":"{}","label":"{}","publish_date":null,"on_spotify":{"genre":{"id":667,"name":"tewtwtewt","items":[]},"author":{"id":830,"first_name":"ewtwetewtewtwtw","last_name":"twetwetwtwetwtwet","items":[]},"label":{"id":880,"title":"tewtwetwtwe","color":"ewttwtwtwetewtwe","items":[]},"publish_date":"1920-12-12","on_spotify":"Y"}}
+  {
+    "id": 843,
+    "genre": {
+      "id": 150,
+      "name": "12831231"
+    },
+    "author": {
+      "id": 76,
+      "first_name": "312321321",
+      "last_name": "31231312"
+    },
+    "label": {
+      "id": 154,
+      "title": "123123213",
+      "color": "312312312"
+    },
+    "publish_date": "1920-12-12",
+    "on_spotify": "Y"
+  },
+  {"id":257,"genre":{"id":630,"name":"tewtw"},"author":{"id":26,"first_name":"tetwetew","last_name":"twetwtwe"},"label":{"id":934,"title":"twetwet","color":"etwew"},"publish_date":"1932-12-12","on_spotify":"Y"}
 ]

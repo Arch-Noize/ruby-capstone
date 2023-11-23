@@ -10,7 +10,7 @@ require 'date'
 class App
   def initialize
     @books = []
-    @albums = JSONifier.new.load_data('./data/albums.json')
+    @albums = []
     @games = []
     @genres = []
     @labels = []
@@ -20,6 +20,7 @@ class App
   # Listing Methods
 
   def list_albums
+    @albums = JSONifier.new.load_data('./data/albums.json')
     if @albums.empty?
       puts 'No albums in the database.'
     else
@@ -30,26 +31,6 @@ class App
   end
   
   # Adding/Creating Methods
-
-  def create_item
-
-    puts 'What type of item do you want to create? Choose from 1-3:'
-    puts '1) A Book'
-    puts '2) An Album'
-    puts '3) A Game'
-    option = gets.chomp
-
-    case option
-    when '1'
-
-    when '2'
-
-    when '3'
-
-    else
-        puts 'Invalid option. Please choose from the options above.'
-    end
-  end
 
   def gather_data
     # Genre
@@ -92,11 +73,11 @@ class App
     on_spotify = gets.chomp.to_s.upcase
 
     album = MusicAlbum.new(
-    genre: data[:genre], 
-    author: data[:author], 
-    label: data[:label],
-    publish_date: data[:publish_date],
-    on_spotify: on_spotify)
+    data[:genre], 
+    data[:author], 
+    data[:label],
+    data[:publish_date],
+    on_spotify)
 
     @albums << album
 
