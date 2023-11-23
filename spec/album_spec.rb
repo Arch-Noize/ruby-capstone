@@ -1,10 +1,16 @@
 require 'rspec'
 require './classes/music_album'
+require './classes/genre'
+require './classes/author'
+require './classes/label'
 require './classes/item'
 
 describe MusicAlbum do
   before :each do
-    @album = MusicAlbum.new('2002-1-1', 'y')
+    @genre = Genre.new('Rock')
+    @author = Author.new('John','Doe')
+    @label = Label.new('Strong', 'Brown')
+    @album = MusicAlbum.new(@genre, @author, @label, '2002-1-1', 'y')
   end
 
   it 'should be instance of MusicAlbum' do
