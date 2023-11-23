@@ -30,7 +30,9 @@
 
 # Ruby Capstone Catalog <a name="about-project"></a>
 
+Given the following UML Diagram, we've created a small Catalog of several items, each with several types and properties using Ruby.
 
+![diagram](/diagram.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,7 +46,16 @@
 
 ### Key Features <a name="key-features"></a>
 
-[Lorem Ipsum]
+The main features of our application can be seen by our console app. Where you can:
+- List all books
+- List all music albums
+- List of games
+- List all genres (e.g 'Comedy', 'Thriller')
+- List all labels (e.g. 'Gift', 'New')
+- List all authors (e.g. 'Stephen King')
+- Add a book
+- Add a music album
+- Add a game
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,11 +71,13 @@ Currently, this is not an available feature
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-[Lorem Ipsum]
-
 ### Prerequisites
 
-[Lorem Ipsum]
+You need to have the following installed:
+
+- Ruby
+- RSpec
+- IRB
 
 ### Setup
 
@@ -95,7 +108,7 @@ rspec
 
 ### Deployment
 
-Nor is it deployed in any other website or service.
+It is not deployed in any other website or service.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,11 +121,6 @@ Nor is it deployed in any other website or service.
 - GitHub: [@lilskyex0x](https://github.com/lilskyex0x)
 - LinkedIn: [Aung Pyae Khant](www.linkedin.com/in/aung-pyae-khant-932342251)
 
-👤 **Ayokunnumi Omololu**
-
-- GitHub: [@Ayokunnumi1](https://github.com/Ayokunnumi1)
-- LinkedIn: [Ayokunnumi Omololu](https://www.linkedin.com/in/ayokunnumiomololu/)
-
 👤 **Santiago Ruido**
 
 - GitHub: [@Arch-Noize](https://github.com/Arch-Noize)
@@ -124,7 +132,7 @@ Nor is it deployed in any other website or service.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-[Lorem Ipsum]
+- Add more items such as movies
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
