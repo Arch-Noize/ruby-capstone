@@ -38,7 +38,9 @@ class App
     genre = gets.chomp.to_s
 
     new_genre = Genre.new(genre)
-    
+    @genres << new_genre
+    genre_json = JSONifier.new
+    genre_json.save_data('./data/genres.json', @genres)
 
     # Label
     puts 'Label name?'
